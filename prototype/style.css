@@ -8,6 +8,16 @@ li {
 
 a {
     text-decoration: none;
+    color:#444
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    text-align: left;
 }
 
 .logo {
@@ -27,8 +37,12 @@ a {
     color: black;
 }
 
-.container > img {
+.container.homepage > img {
     height: 50vh;
+}
+
+.sub-header.container > img {
+    height: 25vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -47,6 +61,11 @@ a {
     background-color: rgb(222, 222, 222);
 }
 
+.sub-header.container {
+    margin: 0 8vw 0 8vw;
+    height: 35vh;
+}
+
 /* GRID */
 .grid-wrapper {
     display: grid;
@@ -55,31 +74,69 @@ a {
 }
 
 .box > img {
-    max-height: 20vw;
+    max-height: 15vw;
     margin: auto;
     display: block;
 }
 
 .box {
-    background-color: rgb(222, 222, 222);
     padding: 20px;
-    margin: 30px 8vw;
+    margin: 20px 4vw;
 }
 
-.section {
+.wrapper {
+    max-width: 65vw;
+    margin: 4vw auto;
+}
+
+.activities-box {
+    margin-bottom: 8vw;
+}
+
+.activities-img-box {
+    background-color:rgb(222, 222, 222);
+}
+.activities-img-box > img {
+    max-height: 10vw;
     margin: auto;
+    display: block;
+}
+
+.activities-box h4 {
+    margin: 10px 0;
+}
+.flex-section {
+    display: flex;
+    margin: 50px auto;
+}
+
+.flex-img > img {
+    height: 200px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.flex-text {
+    padding: 20px;
+}
+.section {
+    margin: 5vw auto 5vw auto;
+    max-width: 65vw;
     max-width: 65vw;
 }
 
-h1 {
-    text-align: center;
-}
-
-p {
+.section.faq {
     text-align: left;
 }
+
+.section.faq h4, .section.faq p{
+    margin: 10px 0 5px 0;
+}
+
 /* FOOTER */
 
 footer {
     text-align: center;
+    font-size:.8em;
+    padding: 10px 0;
 }
